@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .gallery {
+            flex-basis: 50%;
+            display: grid;
+            gap: 8px;
+            grid-template-columns:repeat(7,3fr);
+            grid-auto-rows: 300px;
+        }
+        .box {
+            background-size: cover;
+            background-position: top;
+            color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            background: rgb(171, 63, 27);
+            transition: all 1s ease-in-out;
+            cursor: pointer;
+          }
+          .col-2 {
+            grid-row: span 4;
+          }
+          .row-2 {
+            grid-column: span 3;
+          }
+          .col-3 {
+            grid-column: span 2;
+          }
+          .row-3 {
+            grid-row: span 4;
+          }
+          .box:hover {
+            background-color: rgb(194, 78, 99);
+            background-position: center;
+          }
+    </style>
+
+</head>
+<body>
+    <div class="gallery">
+
+<div class="box col-2" style="background-image: url(../adam-kool-ndN00KmbJ1c-unsplash.jpg);">nature</div>
+<div class="box row-2" style="background-image: url(../blake-verdoorn-cssvEZacHvQ-unsplash.jpg);">nature</div>
+<div class="box col-3" style="background-image: url(../dave-hoefler-lsoogGC_5dg-unsplash.jpg);">nature</div>
+<div class="box" style="background-image: url(../david-marcu-78A265wPiO4-unsplash.jpg);">nature</div>
+<div class="box" style="background-image: url(../taylor-kiser-POFG828-GQc-unsplash.jpg);">body</div>
+<div class="box" style="background-image: url(../spencer-davis-znc9hSxXBJw-unsplash.jpg);">ice</div>
+<div class="box row-3" style="background-image: url(../v2osk-1Z2niiBPg5A-unsplash.jpg);">port</div>
+<div class="box" style="background-image: url(../spencer-davis-znc9hSxXBJw-unsplash.jpg);">view</div>
+<div class="box" style="background-image: url(../adam-kool-ndN00KmbJ1c-unsplash.jpg);">moon</div>
+<div class="box" style="background-image: url(../adam-kool-ndN00KmbJ1c-unsplash.jpg);">earth</div>
+<div class="box col-3" style="background-image: url(../istockphoto-1266580931-1024x1024.jpg);">sun</div>
+<div class="box" style="background-image: url(../lukasz-szmigiel-jFCViYFYcus-unsplash.jpg);">view</div>
+<div class="box row-3" style="background-image: url(../adam-kool-ndN00KmbJ1c-unsplash.jpg);">water fall</div>
+    </div>
+</body>
+</html>
