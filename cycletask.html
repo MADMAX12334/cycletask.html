@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <style>
+         img{
+            height: 400px;
+            width: 400px;
+        }
+        .grad{
+            height: 180px;
+            width: 180px;
+            background-image: repeating-conic-gradient(red 10%, yellow 20%);
+            border-radius: 50%;
+            position: relative;
+            bottom: 215px;
+            left: 100px;
+            transition: 10s;
+
+        }
+        .grad2{
+            height: 180px;
+            width: 180px;
+            background-image: repeating-conic-gradient(red 10%, yellow 20%);
+            border-radius: 50%;
+            position: relative;
+            left: 280px;
+            bottom: 400px;
+            transition: 10s;
+
+            
+        }
+        .grad:hover{
+            transform: rotate(360deg);
+            
+        }
+        .grad2:hover{
+            transform: rotate(360deg);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="cycle">
+        <img src="../pexels-pixabay-276517.jpg" width="400px" height="400px">
+        <div class="grad">
+       </div>
+       <div class="grad2">
+       </div>
+    </div>
+</body>
